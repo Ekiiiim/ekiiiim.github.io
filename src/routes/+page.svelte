@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 
 	let sections = ['About', 'Projects', 'Work', 'Life'];
 	let currentSection = 'About';
@@ -24,7 +25,11 @@
 	});
 </script>
 
-<div class="fixed top-0 left-0 h-full w-48 bg-gray-100 p-5 shadow-lg">
+<div class="fixed top-0 left-0 flex h-full w-48 flex-col gap-2 bg-gray-100 p-5 shadow-lg">
+	<div class="mb-5 flex w-full flex-col items-center gap-3">
+		<img src="{base}/images/Mike_avatar.jpg" alt="Avatar" class="w-f rounded-full" />
+		<span class="text-2xl font-bold">Mike Cheng</span>
+	</div>
 	{#each sections as section}
 		<a
 			href={`#${section}`}
