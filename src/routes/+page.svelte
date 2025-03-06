@@ -36,7 +36,7 @@
 			on:click={() => {
 				document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
 			}}
-			class={`rounded p-2 ${currentSection === section ? 'bg-blue-500 text-white' : 'text-gray-800'}`}
+			class={`cursor-pointer rounded p-2 ${currentSection === section ? 'bg-blue-500 text-white' : 'text-gray-800 hover:bg-blue-200'}`}
 		>
 			{section}
 		</button>
