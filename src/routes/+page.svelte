@@ -26,7 +26,11 @@
 	});
 </script>
 
-<div class="fixed top-0 left-0 flex h-full w-48 flex-col gap-2 bg-gray-100 p-5 shadow-lg">
+<div class="fixed z-[-1] min-h-screen min-w-screen dark:bg-gray-900"></div>
+
+<div
+	class="fixed top-0 left-0 flex h-full w-48 flex-col gap-2 bg-gray-100 p-5 shadow-lg dark:bg-white/10 dark:text-white"
+>
 	<div class="mb-5 flex w-full flex-col items-center gap-3">
 		<img src="{base}/images/Mike_avatar.jpg" alt="Avatar" class="w-f rounded-full" />
 		<span class="text-2xl font-bold">Mike Cheng</span>
@@ -36,14 +40,14 @@
 			on:click={() => {
 				document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
 			}}
-			class={`cursor-pointer rounded p-2 ${currentSection === section ? 'bg-blue-500 text-white' : 'text-gray-800 hover:bg-blue-200'}`}
+			class={`cursor-pointer rounded p-2 ${currentSection === section ? 'bg-blue-500 text-white' : 'text-gray-800 hover:bg-blue-200 dark:text-white dark:hover:bg-gray-600/50'}`}
 		>
 			{section}
 		</button>
 	{/each}
 </div>
 
-<div class="ml-56 p-5">
+<div class="ml-56 p-5 dark:text-white">
 	<section id="About" class="mb-10 scroll-mt-5">
 		<h1 class="text-2xl font-bold">About</h1>
 		<p class="h-screen">This is the about section.</p>
