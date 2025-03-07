@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
+	import ProjectCard from '$lib/components/ProjectCard.svelte';
 
 	let sections = ['About', 'Projects', 'Work', 'Life'];
 	let currentSection = '';
@@ -56,7 +57,11 @@
 	<section id="Projects" class="mb-10 scroll-mt-5">
 		<h1 class="text-2xl font-bold">Projects</h1>
 		<p>Here are some of my projects.</p>
-		<div class="h-screen">this should be in cards format...</div>
+		<div>this should be in cards format...</div>
+
+		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+			<ProjectCard></ProjectCard>
+		</div>
 	</section>
 
 	<section id="Work" class="mb-10 scroll-mt-5">
