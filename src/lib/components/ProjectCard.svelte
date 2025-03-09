@@ -13,7 +13,10 @@
 	});
 </script>
 
-<button onclick={() => card.flip()} class="h-48 w-72 cursor-pointer perspective-distant">
+<button
+	onclick={() => card.flip()}
+	class="h-48 w-72 cursor-pointer perspective-distant hover:scale-105"
+>
 	<div class="size-full duration-1000 transform-3d {card.flipped && 'rotate-y-180'}">
 		<!-- front -->
 		<div class="absolute inset-0 size-full backface-hidden">
