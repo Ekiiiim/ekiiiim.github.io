@@ -59,7 +59,11 @@
 		<p>Here are some of my projects.</p>
 		<div>this should be in cards format...</div>
 
-		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+		<div class="grid grid-cols-[repeat(auto-fill,_minmax(290px,_1fr))] gap-4 gap-y-8">
+			<ProjectCard></ProjectCard>
+			<ProjectCard></ProjectCard>
+			<ProjectCard></ProjectCard>
+			<ProjectCard></ProjectCard>
 			<ProjectCard></ProjectCard>
 		</div>
 	</section>
